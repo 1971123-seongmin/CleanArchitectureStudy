@@ -60,4 +60,6 @@ dependencies {
     implementation(libs.hilt.android)
     kapt(libs.hilt.android.compiler)
 
+    implementation("com.google.dagger:hilt-android:2.51.1")
+
 }
