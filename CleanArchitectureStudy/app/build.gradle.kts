@@ -58,8 +58,40 @@ dependencies {
 
     // Hilt
     implementation(libs.hilt.android)
-    kapt(libs.hilt.android.compiler)
+    implementation(libs.hilt.android.compiler)
 
-    implementation("com.google.dagger:hilt-android:2.51.1")
+    // ViewModel, LiveData
+    implementation(libs.androidx.lifecycle.livedata.ktx)
+    implementation(libs.androidx.lifecycle.viewmodel.ktx)
+
+    // okHttp
+    implementation(libs.okhttp)
+
+    // retrofit
+    implementation(libs.retrofit)
+    implementation(libs.converter.gson)
+
+    // gson
+    implementation(libs.gson)
+
+    // dataStore
+    implementation(libs.androidx.datastore.preferences)
+
+    // glide
+    implementation(libs.glide)
+    annotationProcessor (libs.glide.compiler)
+
+    // core-splash
+    implementation(libs.androidx.core.splashscreen)
+
+    // navigation
+    implementation(libs.androidx.navigation.ui.ktx)
+    implementation(libs.androidx.navigation.fragment.ktx)
+
+    // ViewPager2
+    implementation(libs.androidx.viewpager2)
+
+    // Coroutines
+    implementation(libs.kotlinx.coroutines)
 
 }
